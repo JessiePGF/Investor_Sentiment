@@ -12,8 +12,8 @@ This project replicates and extends an empirical asset pricing study on investor
 ## Procedure
 
 ### 1. Sorts & Plots
-(Table 2) For each month, stocks are sorted into 10 equally-weighted portfolios based on NYSE decile breakpoints across 8 key characteristics (ME, Vol, Prof, DY, BE/ME, Inv, NI, AC)  
-(Figure 2) shows the results of Table 2 graphically  
+**(Table 2)** For each month, stocks are sorted into 10 equally-weighted portfolios based on NYSE decile breakpoints across 8 key characteristics (ME, Vol, Prof, DY, BE/ME, Inv, NI, AC)  
+**(Figure 2)** shows the results of Table 2 graphically  
 - Returns are compared across positive and negative Orthogonalized Sentiment ($SENTIMENT^\perp$)
 - Identify time-series changes in cross-sectional effects from the conditional difference of average returns across deciles
 
@@ -27,11 +27,11 @@ R_{X_{it=High},t} - R_{X_{it=Low},t} = c + d SENTIMENT_{t-1} + \beta RMRF_t + s 
 \end{aligned}
 $$  
 
-(Table 3) The monthly returns from January through December of t are regressed on the sentiment index that prevailed at the end of the prior year
+**(Table 3)** The monthly returns from January through December of t are regressed on the sentiment index that prevailed at the end of the prior year
 - Exclude SMB and HML from the right side when they are the portfolios being forecast
 - Dependent variable: monthly return on a long–short portfolio
 - Due to data limatations, portfolio breakpoints vary across characteristics:
-  - (30/40/30): profitability(earn), BEME, INV(E/FA), DY
+  - (30/40/30): profitability(earnings), BEME, INV(E/FA), DY
   - (20/60/20): volatility, NI(GS), AC, while med60 = (Qnt2+Qnt3+Qnt4)/3
 - Four model variations are evaluated :
   - Orthogonalization: Raw vs. Orthogonalized
@@ -44,14 +44,14 @@ RX_{it=\text{High}, t} - RX_{it=\text{Low}, t} = c + d \cdot \text{SENTIMENT}_{t
 \end{aligned}
 $$  
 
-(Table 4) Investigate whether sentiment coincides with time variation in market betas
+**(Table 4)** Investigate whether sentiment coincides with time variation in market betas
 - Hypothesis Testing:
   - Risk Hypothesis: The sign of $\beta f$ is consistent with the return prediction coefficient from Table 3. This confirms that Beta risk captures the return dynamics
   - Sentiment Hypothesis: The sign of $\beta f$ is either inconsistent (wrong sign) or statistically insignificant
 - Average monthly returns are matched to SENTIMENT from the previous year-end
 
 ### 4. Monthly Sentiment
-(Table 5) We re-estimate the interaction regressions from the previous table using monthly sentiment
+**(Table 5)** We re-estimate the interaction regressions from the previous table using monthly sentiment
 - The original study uses annual sentiment, based on the idea that sentiment affects returns slowly over time
 - As financial markets have become faster and more responsive, sentiment may also have more short-term effects
 
@@ -91,7 +91,7 @@ $$
 ![table_4](Result/Table_4.png)
 
 ### Table 5
-- The transition to Monthly Sentiment (Table 5) reveals much stronger interaction effects. This suggests that in the modern era, sentiment is a high-turnover signal
+- Monthly Sentiment reveals much stronger interaction effects. This suggests that in the modern era, sentiment is a high-turnover signal
 
 ![table_5](Result/Table_5.png)
 
