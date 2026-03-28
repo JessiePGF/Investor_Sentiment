@@ -25,7 +25,8 @@ $$
 \begin{aligned}
 R_{X_{it=High},t} - R_{X_{it=Low},t} = c + d SENTIMENT_{t-1} + \beta RMRF_t + s SMB_t + h HML_t + m UMD_t + u_t 
 \end{aligned}
-$$
+$$  
+
 (Table 3) The monthly returns from January through December of t are regressed on the sentiment index that prevailed at the end of the prior year
 - Exclude SMB and HML from the right side when they are the portfolios being forecast
 - Dependent variable: monthly return on a long–short portfolio
@@ -41,7 +42,8 @@ $$
 \begin{aligned}
 RX_{it=\text{High}, t} - RX_{it=\text{Low}, t} = c + d \cdot \text{SENTIMENT}_{t-1} + \beta (e + f \cdot \text{SENTIMENT}_{t-1}) \text{RMRF}_t + u_t 
 \end{aligned}
-$$
+$$  
+
 (Table 4) Investigate whether sentiment coincides with time variation in market betas
 - Hypothesis Testing:
   - Risk Hypothesis: The sign of $\beta f$ is consistent with the return prediction coefficient from Table 3. This confirms that Beta risk captures the return dynamics
